@@ -1,0 +1,16 @@
+package Ejecutables;
+
+public class Ejercicio10ArraysDefinicionYUso {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] pares = {2,4,6,8,10};
+		
+		//Method that give us the "number" in that index
+		System.out.println("en la posicion 1 hay: " + pares[1]);
+		//Method that give us the length of the array
+		System.out.println("elements: " + pares.length);
+
+	}
+
+}

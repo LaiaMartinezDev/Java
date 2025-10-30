@@ -1,0 +1,10 @@
+package Ejecutables;
+
+public class Ejercicio06Hipotenusa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

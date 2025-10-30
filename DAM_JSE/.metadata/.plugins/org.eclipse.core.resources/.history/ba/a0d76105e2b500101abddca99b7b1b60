@@ -1,0 +1,10 @@
+package Alternativas;
+
+public class Ejercicio01IFSimpleUnaRama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

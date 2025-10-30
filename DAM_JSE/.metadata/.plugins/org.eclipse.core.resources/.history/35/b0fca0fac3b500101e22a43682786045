@@ -1,0 +1,15 @@
+package Ejecutables;
+
+public class Ejercicio06Hipotenusa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double hipotenusa = 0, cateto1 = 4, cateto2 = 3;
+		
+		hipotenusa = Math.sqrt(cateto1*cateto1 + cateto2*cateto2);
+		System.out.println(hipotenusa);
+
+	}
+
+}

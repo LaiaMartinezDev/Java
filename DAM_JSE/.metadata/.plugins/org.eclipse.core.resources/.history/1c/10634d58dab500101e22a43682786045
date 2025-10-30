@@ -1,0 +1,18 @@
+package Ejecutables;
+
+public class Ejercicio09StringMetodos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String frase = "Hola me llamo Tomas y soy tu profe.";
+		
+		//Method that returns a char value at the specified index
+		System.out.println(frase.charAt(0));
+		//Method that returns the length of the string
+		System.out.println(frase.length());
+		//Method that return the same string but with upper cases
+		System.out.println(frase.toUpperCase());
+
+	}
+
+}

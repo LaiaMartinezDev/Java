@@ -1,0 +1,11 @@
+package Ejecutables;
+
+public class Ejercicio07Random {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	}
+
+}

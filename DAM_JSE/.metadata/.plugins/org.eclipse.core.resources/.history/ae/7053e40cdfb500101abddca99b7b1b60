@@ -1,0 +1,15 @@
+package Ejecutables;
+
+public class Ejercicio10ArraysDefinicionYUso {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] pares = {2,4,6,8,10};
+		
+		//Method that give us the
+		System.out.println(pares[1]);
+		System.out.println(pares.length);
+
+	}
+
+}

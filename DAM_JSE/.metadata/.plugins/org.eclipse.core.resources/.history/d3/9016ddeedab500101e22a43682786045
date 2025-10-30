@@ -1,0 +1,27 @@
+package Ejecutables;
+
+public class Ejercicio09StringMetodos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String frase = "Hola me llamo Tomas y soy tu profe.";
+		
+		//Method that returns a char value at the specified index
+		System.out.println(frase.charAt(0));
+		//Method that returns the length of the string
+		System.out.println(frase.length());
+		//Method that return the same string but with upper cases
+		System.out.println(frase.toUpperCase());
+	
+		String fraseEnMayusculas = frase.toUpperCase(); 
+		
+		//Method that returns a substring of the main string. The substring begins with the character at the specified index and ends to the end of the string.
+		System.out.println(frase.substring(5));
+		
+		//Method that returns a substring of the main string. The substring begins with the character at the specified beginindex and ends to the character at endindex.
+		System.out.println(frase.substring(5,9));
+
+		
+	}
+
+}

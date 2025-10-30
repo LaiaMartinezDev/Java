@@ -1,0 +1,26 @@
+package Ejecutables;
+
+public class Ejercicio10ArraysDefinicionYUso {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] pares = {2,4,6,8,10};
+		
+		//Method that give us the "number" in that index
+		System.out.println("en la posicion 1 hay: " + pares[1]);
+		//Method that give us the length of the array
+		System.out.println("elements: " + pares.length);
+		
+		String [] palabras = {"hola", "adios"};
+		System.out.println("en la posicion 0 hay: " + palabras[0]);
+		
+		//We are creating empty array
+		int [] impares = new int [5]; // This give us 0 which is the default value
+		String [] mensajes = new String [4]; // This give us null which is the default value
+		
+		System.out.println("en la posicion 2 hay: " + impares[2]);
+		System.out.println("en la posicion 2 hay: " + mensajes[2]);
+
+	}
+
+}
