@@ -1,0 +1,53 @@
+package Ejercicios_Actividad1;
+
+import java.util.Scanner;
+
+public class Ejercicio03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Para que tres números enteros den un triángulo válido, se tiene que dar la
+		 * circunstancia de que la suma de dos cualquiera de los tiene que ser mayor que la
+		 * del otro, en todas las combinaciones posibles.
+		 * Pedir tres números por consola, e informar si el triángulo es correcto, o no
+		 * es correcto.
+		 * Y si es correcto además decir si es:
+		 * Equilátero: los tres lados iguales.
+		 * Isósceles: dos iguales y uno desigual
+		 * Escaleno: los tres lados distintos
+		 */
+		Scanner scanner = new Scanner (System.in);
+		int num1 = 0, num2 = 0, num3 = 0;
+		
+		System.out.println("Dame un lado de un triangulo:");
+		num1 = scanner.nextInt();
+		System.out.println("Dame un otro lado de un triangulo:");
+		num2 = scanner.nextInt();
+		System.out.println("Dame un otro lado de un triangulo:");
+		num3 = scanner.nextInt();
+		
+		if(num1 + num2 > num3 || num2 + num3 > num1 || num3 + num1 > num2) {
+			System.out.println("Triangulo Correcto");
+			
+			if(num1 == num2 && num2 == num3 && num3 == num1) {
+				System.out.println("Triangulo Equilatero");
+			}else {
+				if(((num1 == num2) && (num1 != num3) && (num2 != num3)) || ((num2 == num3) && (num2 != num1) && (num3 != num1)) || ((num3 == num1) && (num1 != num2) && (num3 != num2)) ) {
+					System.out.println("Triangulo Isosceles");
+				}else {
+					if(num1!=num2 && num2!=num3 && num1!= num3) {
+						System.out.println("Triangulo Escaleno");
+					}
+				}
+			
+			}
+		
+		} else {
+			System.out.println("Triangulo Incorrecto");
+		}
+		
+		scanner.close();
+		
+	}
+
+}
