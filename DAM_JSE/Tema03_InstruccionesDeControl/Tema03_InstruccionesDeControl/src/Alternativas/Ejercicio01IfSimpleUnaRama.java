@@ -1,0 +1,24 @@
+package Alternativas;
+
+public class Ejercicio01IfSimpleUnaRama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int edad = 18;
+		if (edad >= 18) {
+			System.out.println("Eres mayor de edad");
+			System.out.println("Y puedo votar");
+		}
+			
+		System.out.println("FIN DEL PROCESO");
+		
+		int edad2 = 17;
+		if (edad2 >= 18){
+			System.out.println("Eres mayor de edad");
+			System.out.println("Y puedo votar");
+		}
+			
+		System.out.println("FIN DEL PROCESO");
+	}
+
+}
