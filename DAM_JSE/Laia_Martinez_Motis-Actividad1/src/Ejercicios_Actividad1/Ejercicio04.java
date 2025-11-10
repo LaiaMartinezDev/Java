@@ -1,0 +1,49 @@
+package Ejercicios_Actividad1;
+
+import java.util.Scanner;
+
+public class Ejercicio04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Realizar un juego para adivinar un número.
+		 * Para ello pedir un número N aleatorio de 1 a 40,
+		 * y luego ir pidiendo números indicando “mayor” o “menor” según sea 
+		 * mayor o menor con respecto a N. 
+		 * El proceso termina cuando el usuario acierta. Y
+		 * escribimos la cantidad de intentos antes del número exacto.
+		 */
+		int aleatorio = 0, num = 0, intentos = 0;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		// 1. - Leer el primer numero de la consola
+		System.out.println("*JUEGO DE ADIVINACIÓN*");
+		System.out.println("Dame un numero aleatorio del 1 al 40:");
+		aleatorio = scanner.nextInt();
+		
+		System.out.println("Dame un numero:");
+		num = scanner.nextInt();
+		while (num != aleatorio) {
+			intentos ++;
+			
+			if (num > aleatorio) {
+				System.out.println("Tu numero es mayor al número aleatorio");
+			}else {
+				if(num < aleatorio) {
+					System.out.println("Tu numero es menor al número aleatorio");
+				}
+			}
+			
+			System.out.println("*¡NO HAS ACERTADO!*");	
+			System.out.println("Dame otro numero:");
+			num = scanner.nextInt();
+		}
+	
+		
+		System.out.println("*¡HAS ACERTADO!*");	
+		System.out.println("*FIN DEL JUEGO DE ADIVINACIÓN*");
+		System.out.println("*Número de intentos: "+ intentos);
+	}
+
+}

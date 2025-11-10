@@ -1,0 +1,32 @@
+package Repetitivas;
+
+public class Ejercicio09BucleForArray {
+
+	/* 
+	 * Array de palabras qeu tengo que procesar
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * Recorrer un array cuando me hace falta la posicion de memoria de cada elemento
+		 */
+		String[] palabras = {"hola", "tigre", "adios"};
+		
+		for (int i = 0; i < palabras.length; i++) {
+			System.out.println("en posición:" + i + "esta la palabra: " + palabras[i]);
+		}
+			/*
+			 * Recorrer un array cuando me hace falta la posicion de memoria de cada elemento
+			 */
+		
+		for (String palabra : palabras) {
+			System.out.println("la palabra es : " + palabra);
+		}
+		
+		for (int i = palabras.length; i>=0; i--) {
+			System.out.println(palabras[i].toUpperCase());
+		
+		}
+		System.out.println("*Fin del proceso*");	
+	}
+}

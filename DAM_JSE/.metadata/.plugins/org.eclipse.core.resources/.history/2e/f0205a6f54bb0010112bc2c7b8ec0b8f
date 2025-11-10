@@ -1,0 +1,72 @@
+package Ejercicios_Actividad1;
+
+import java.util.Scanner;
+
+public class Ejercicio02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Leer tres números enteros de la consola y
+		 * mostrarlos ordenados de mayor a menor.
+		 * 
+		 */
+		int num1 = 0, num2 = 0, num3 = 0;
+		Scanner scanner = new Scanner (System.in);
+		System.out.println("Dame un numero entero: ");
+		num1 = scanner.nextInt();
+		
+		System.out.println("Dame otro numero entero: ");
+		num2 = scanner.nextInt();
+		
+		System.out.println("Dame un último numero entero: ");
+		num3 = scanner.nextInt();
+		
+		if(num1 != num2 && num1 != num2 && num2 != num3) {
+			System.out.println("No hay ningún numero igual");
+		} else {
+			if(num1 == num2 || num1 == num2 || num2 == num3)
+		}
+		if (num1 < num2 && num1 < num3 && num2 < num3) {
+				System.out.println("El orden de los números es: ");
+				System.out.println("Mayor: " +num3);
+				System.out.println("Medio: "+num2);
+				System.out.println("Menor: "+num1);
+		} else{
+			if(num2 < num1 && num1 < num3 && num2 < num3) {
+				System.out.println("El orden de los números es: ");
+				System.out.println("Mayor: " +num3);
+				System.out.println("Medio: "+num1);
+				System.out.println("Menor: "+num2);
+		}else {
+			if(num2 < num1 && num3 < num1 && num2 < num3) {
+				System.out.println("El orden de los números es: ");
+				System.out.println("Mayor: " +num1);
+				System.out.println("Medio: "+num3);
+				System.out.println("Menor: "+num2);
+		} else {
+			if(num2 < num1 && num3 < num1 && num3 < num2) {
+				System.out.println("El orden de los números es: ");
+				System.out.println("Mayor: " +num1);
+				System.out.println("Medio: "+num2);
+				System.out.println("Menor: "+num3);
+		}else {
+			if(num3 < num1 && num1 < num2 && num3 < num2) {
+				System.out.println("El orden de los números es: ");
+				System.out.println("Mayor: " +num2);
+				System.out.println("Medio: "+num1);
+				System.out.println("Menor: "+num3);
+		}else {
+			if(num1 < num3 && num1 < num2 && num3 < num2) {
+				System.out.println("El orden de los números es: ");
+				System.out.println("Mayor: " +num2);
+				System.out.println("Medio: "+num3);
+				System.out.println("Menor: "+num1);
+							}
+						}		
+					}
+				}		
+			}
+		}
+		scanner.close();
+	}
+}
